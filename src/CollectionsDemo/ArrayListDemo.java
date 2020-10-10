@@ -1,6 +1,7 @@
 package CollectionsDemo;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 
 public class ArrayListDemo {
@@ -90,6 +91,8 @@ public class ArrayListDemo {
         ar4.add("Maven");
 
         ar3.retainAll(ar4);
+
+
 
         for(String s1 : ar3)
             System.out.println(s1);
