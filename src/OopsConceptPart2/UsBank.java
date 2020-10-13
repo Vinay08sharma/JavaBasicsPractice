@@ -23,10 +23,6 @@ public interface UsBank {
 		-- Why we cannot have multiple inheritance with class is because -
 		Lets say bot the parents have same method name.. so while accessing the method the compiler will be confused to which one should be executed.
 		 This is also called as diamond problem or Ambiguity problem
-		
-	
-
-
 
 	*/
 }

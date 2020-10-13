@@ -1,4 +1,4 @@
-package CollectionsDemo;
+package JavaBasics;
 
 public class FinallyBlockDemo {
 
