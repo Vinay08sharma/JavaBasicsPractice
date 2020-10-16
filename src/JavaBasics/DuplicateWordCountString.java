@@ -8,22 +8,26 @@ public class DuplicateWordCountString {
     public static void main(String[] args) {
 
 
-        String[] s = {"Testing", "Testing", "SDET", "SDET1"};
+        String[] s = {"Testing", "Testing", "SDET", "SDET1","SDET1"};
 
         HashMap<String,Integer> hs = new HashMap<>();
 
-        for(String s1 : s){
-            if(hs.containsKey(s1)){
+        for(String s1 : s)
+        {
+            if(hs.containsKey(s1))
+            {
                 hs.put(s1,hs.get(s1)+1);
             }
-            else {
+            else
+            {
                 hs.put(s1,1);
             }
+
         }
-        for(Map.Entry<String, Integer> entry: hs.entrySet()){
-//            if(entry.getValue()>1){
-                System.out.println(entry.getKey()+" : "+entry.getValue());
-//            }
+
+        for(Map.Entry<String, Integer> entry : hs.entrySet())
+        {
+            System.out.println(entry.getKey() + " : "+ entry.getValue());
         }
 
     }
