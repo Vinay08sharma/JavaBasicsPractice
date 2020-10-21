@@ -17,7 +17,7 @@ public class ArrayContainsNumber {
     public static void main(String[] args){
         int[] arr = {1,2,32,324,432,32};
 
-        if( isNumberPresent(arr,32)==true)
+        if(isNumberPresent(arr, 32))
             System.out.println("Number is present");
         else
             System.out.println("Number is not present");

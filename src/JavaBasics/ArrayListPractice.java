@@ -30,6 +30,9 @@ public class ArrayListPractice {
 
         ArrayList<String> arr = new ArrayList<>();
 
+       boolean ar1 =  ar.contains("love coding"); // to check if arraylist contains the string
+        System.out.println(ar1);
+
         arr.add("sharmaji");
         arr.add("Automation Engineer");
 
