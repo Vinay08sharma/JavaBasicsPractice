@@ -1,14 +1,22 @@
 package JavaBasics;
 
+import java.util.concurrent.TimeoutException;
+
 public class NPEProgram {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NullPointerException{
+        try {
+            String s = null;
 
-        String s = null;
-
-        if(s.equals("acs"))
+            if (s.equals("acs")) {
+                System.out.println("true");
+            }
+        } catch (NullPointerException a) {
+            System.out.println("Catch exception");
+        }
+        catch (Exception n)
         {
-            System.out.println("true");
+            System.out.println("Unreachable");
         }
     }
 }
