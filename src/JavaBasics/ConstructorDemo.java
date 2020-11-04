@@ -8,6 +8,7 @@ public class ConstructorDemo {
         System.out.println("Default Constructor");
     }
 
+
     //Parameterized Constructor
     public ConstructorDemo(int i){
         System.out.println("Paramaterized Constructor "+ i);
@@ -16,7 +17,9 @@ public class ConstructorDemo {
     public static void main(String[] args) {
 
         //Constructor gets called as soon as we create an object
-        ConstructorDemo c = new ConstructorDemo(); // this will call default constructor with zero args
+        ConstructorDemo c = new ConstructorDemo(50); // this will call default constructor with zero args
+
+
 
 
     }

@@ -2,16 +2,17 @@ package JavaBasics;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class DuplicateCharacterCount {
 
     public static void main(String[] args) {
 
-        String s = "SDETTesTingSDET";
+        String s = "SDET TesTing SDET";
 
         char[] charArray = s.toCharArray();
 
-        HashMap<Character,Integer> hs = new HashMap<>();
+        TreeMap<Character,Integer> hs = new TreeMap<>(); // Using Treemap to sort them in order
 
         for(char c : charArray)
         {
@@ -24,7 +25,7 @@ public class DuplicateCharacterCount {
 
         for(Map.Entry<Character,Integer> entry : hs.entrySet()){
             if(entry.getValue()>1){
-                System.out.println(entry.getKey() + " : "+entry.getValue());
+                System.out.print(entry.getKey() + " : "+entry.getValue()+" ");
             }
 //            System.out.print(entry.getKey() + " : " + entry.getValue() + " , ");
         }
