@@ -16,6 +16,7 @@ public class StringSplit {
             {
                 res+=" "+ch;
             }
+
             else
             {
                 res+=ch;
